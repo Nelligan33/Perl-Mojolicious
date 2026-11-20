@@ -19,11 +19,11 @@ function LabelTextService(){
 							if(window.inputEl != null && window.inputEl != undefined){
 								//buttons
 								if(window.inputEl.type == "button" || window.inputEl.type == "submit" || window.inputEl.type == "reset"){
-									window.inputEl.innerHTML = window.jsonObject[window.position];
+									window.inputEl.innerText = window.jsonObject[window.position];
 								}
 								//links and labels
 								if(window.inputEl.id.substring(0, 3) == "lbl" || window.inputEl.id.substring(0, 3) == "lnk"){
-									window.inputEl.innerHTML = window.jsonObject[window.position];
+									window.inputEl.innerText = window.jsonObject[window.position];
 								}
 							}
 						}else{
